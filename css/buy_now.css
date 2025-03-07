@@ -1,0 +1,73 @@
+/* 전체 배경 설정 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* 메인 콘텐츠 박스 */
+.main_wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 본문 텍스트 */
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background: #0056b3;
+    text-decoration: none;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .main_wrapper {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

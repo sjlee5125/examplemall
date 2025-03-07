@@ -1,0 +1,107 @@
+/* 전체 로그인 래퍼 정렬 */
+.login_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #fff; /* 전체 배경색 추가 */
+}
+
+/* 로그인 컨테이너 */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* 반응형 최대 너비 설정 */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* 입력 필드 */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* 내부 패딩 포함한 크기 계산 */
+}
+
+/* 카카오 로그인 버튼 */
+.kakao-login-button {
+  background-color: #ffe812; /* 카카오 노란색 */
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 20px; /* 아래 간격 추가 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.kakao-login-button:hover {
+  background-color: #ffd700; /* 마우스 오버 시 색상 변경 */
+}
+
+/* 일반 로그인 버튼 */
+.login-button {
+  background-color: #000; /* 일반 로그인 버튼 초록색 */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #212121; /* 마우스 오버 시 색상 변경 */
+}
+
+
+/* SNS 로그인 버튼 래퍼 */
+.sns-login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px; /* 버튼 간 간격 */
+  margin-top: 20px;
+}
+
+/* SNS 로그인 버튼 스타일 */
+.sns-login-button {
+  display: block;
+  width: 100%;
+  max-width: 400px; /* 버튼 최대 너비 */
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sns-login-button.naver {
+  background-color: #1ec800;
+}
+
+.sns-login-button.google {
+  background-color: #4285f4;
+  margin-bottom: 20px;
+}
+
+.sns-login-button:hover {
+  opacity: 0.9; /* 마우스 오버 시 투명도 */
+}

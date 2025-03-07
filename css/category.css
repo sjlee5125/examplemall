@@ -1,0 +1,190 @@
+/* 반응형 - 카테고리 메뉴 세로 정렬 */
+@media (max-width: 768px) {
+    .category-menu nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .swiper-slide img {
+        height: 240px; /* 모바일에서 이미지 크기 축소 */
+    }
+}
+
+/* 상품 목록 스타일 */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 14px;
+    margin: 8px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.discount-rate {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.discounted-price {
+    color: #333;
+    font-weight: bold;
+}
+
+/* BEST SECTION WRAPPER */
+.best-section-wrapper {
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 40px 0;
+}
+
+.best-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.best-section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Swiper 페이지네이션 스타일 */
+.swiper-pagination {
+    position: absolute; /* 부모 요소를 기준으로 위치 설정 */
+    bottom: 10px; /* 슬라이더 내부에서 아래쪽으로 10px */
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10; /* 슬라이더 위에 표시되도록 설정 */
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #ddd; /* 기본 회색 */
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background: #333; /* 활성화된 상태 */
+    transform: scale(1.3); /* 활성화된 페이지네이션 확대 */
+}
+
+/* BEST 슬라이더 영역 */
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden; /* 슬라이더가 컨테이너 밖으로 넘치지 않도록 */
+    position: relative; /* 슬라이더와 페이지네이션의 기준 */
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* 부드러운 이동 효과 */
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* 이미지가 영역을 벗어나지 않도록 */
+    margin: 0 10px; /* 좌우 간격 추가 */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 400px; /* 이미지 높이 조정 */
+    object-fit: cover; /* 이미지 비율 유지 */
+    border-radius: 8px;
+}
+
+
+.swiper-slide:hover {
+    transform: scale(1.02); /* 확대 효과 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+/* 카테고리 메뉴 스타일 */
+.category-menu {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.category-menu h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category-menu nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-menu nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 5px 15px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.category-menu nav a:hover,
+.category-menu nav a.active {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+

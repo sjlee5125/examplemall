@@ -1,0 +1,144 @@
+/* 전체 레이아웃 */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 메인 컨테이너 */
+.main_wrapper.sign_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.join_us_title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2a5db0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.join_box {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+/* 섹션 타이틀 */
+.section_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.section_title.required {
+  color: #2a5db0;
+  border-bottom-color: #2a5db0;
+}
+
+.section_title.optional {
+  color: #888;
+  border-bottom-color: #aaa;
+}
+
+/* 입력 필드 */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.col1 {
+  font-weight: bold;
+  color: #333;
+  width: 30%;
+}
+
+/* 입력 필드: 전체 너비 통일 */
+.col2 input, .email-input {
+  width: 100%; /* 동일한 너비 적용 */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 38px;
+  box-sizing: border-box;
+}
+
+/* 이메일 입력란 정렬 및 비율 통일 */
+.email-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+
+.email-group input {
+  flex: 1; /* 동일한 비율로 너비 조정 */
+  max-width: none; /* 이전 max-width 제거 */
+}
+
+.at-symbol {
+  font-weight: bold;
+  color: #555;
+  padding: 0 5px;
+}
+
+/* 버튼 크기 통일 */
+section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* 버튼을 중앙에 배치 */
+  gap: 15px; /* 버튼 사이 간격 */
+}
+
+button {
+  width: 200px; /* 버튼 너비 고정 */
+  height: 48px; /* 버튼 높이 */
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+.button_join {
+  background-color: #2a5db0;
+  color: white;
+}
+
+.button_join:hover {
+  background-color: #1e4a8c;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* 호버 시 위로 이동 */
+}
+
+.button_cancel {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+.button_cancel:hover {
+  background-color: #dcdcdc;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* 호버 시 위로 이동 */
+}
+

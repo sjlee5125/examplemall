@@ -1,0 +1,462 @@
+.main_wrapper.contents_detail {
+  width: 1080px;
+  height: auto;
+  padding-top: 20px;
+}
+.main_wrapper.contents_detail div,
+.main_wrapper.contents_detail section,
+.main_wrapper.contents_detail input,
+.main_wrapper.contents_detail button,
+.main_wrapper.contents_detail i {
+  box-sizing: border-box;
+}
+.main_wrapper.contents_detail .top {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.main_wrapper.contents_detail .top .top_left {
+  width: 50%;
+  height: 100%;
+}
+.main_wrapper.contents_detail .top .top_left .category_info {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #6c6c6c;
+}
+.main_wrapper.contents_detail .top .top_left .main_img {
+  width: 415px;
+  height: 415px;
+  border-radius: 35px;
+  background-color: rgb(189, 189, 189);
+  margin-bottom: 20px; /* 추가: 이미지와 텍스트 사이 간격 */
+}
+
+.main_wrapper.contents_detail .top .top_left .main_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+}
+
+.main_wrapper.contents_detail .top .top_left .imgs {
+  display: flex;
+  justify-content: flex-start; /* 필요한 경우 flex-start 대신 center로 조정 */
+  gap: 10px; /* 이미지 간격 추가 */
+}
+
+
+.main_wrapper.contents_detail .top .top_right {
+  width: 50%;
+  height: 100%;
+}
+.main_wrapper.contents_detail .top .top_right {
+  display: flex;
+  flex-direction: column;
+  padding: 30px; /* 추가 padding 설정 */
+}
+
+.main_wrapper.contents_detail .top .top_left .imgs .img {
+  width: 93.75px;
+  height: 90px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+
+.main_wrapper.contents_detail .top .top_left .imgs .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.main_wrapper.contents_detail .top .top_right .contents_infos .product_title {
+  font-family: 'Arial', sans-serif; /* 원하는 폰트로 변경 */
+  font-size: 20px; /* 폰트 크기 조절 */
+  font-weight: bold; /* 폰트를 굵게 */
+  color: #333; /* 텍스트 색상 */
+  margin-bottom: 10px; /* 아래 간격 추가 */
+}
+
+
+/* 드롭다운 버튼 스타일 */
+.main_wrapper.contents_detail .top .top_right .contents_infos select,
+.main_wrapper.contents_detail .top .top_right .buttons.choice select {
+  width: 360px; /* 드롭다운 너비 고정 */
+  padding: 5px; /* 세로 크기를 줄이기 위해 padding-top과 padding-bottom 값을 줄임 */
+  font-size: 16px; /* 텍스트 크기 */
+  height: auto; /* 높이를 자동으로 설정하여 padding에 맞게 조정 */
+  border-radius: 5px; /* 모서리를 둥글게 */
+  border: 1px solid #ddd; /* 테두리 색상 */
+  box-sizing: border-box;
+}
+
+
+
+.main_wrapper.contents_detail .top .top_right .contents_infos,
+.main_wrapper.contents_detail .top .top_right .buttons.choice span.choice_title,
+.main_wrapper.contents_detail .top .top_right .contents_infos .label,
+.main_wrapper.contents_detail .top .top_right .contents_infos .value {
+    font-size: 16px; /* 모든 텍스트를 동일한 크기로 */
+    color: #333; /* 기본 텍스트 색상 */
+    line-height: 1.6; /* 줄 간격을 1.6으로 설정하여 가독성 향상 */
+}
+
+.main_wrapper.contents_detail .top .top_right .product_meta .meta_item {
+  display: flex;
+  justify-content: space-between; /* 라벨과 값을 양쪽으로 배치 */
+  margin-bottom: 10px; /* 각 항목 간격 */
+  font-size: 16px; /* 글자 크기 통일 */
+  color: #333;
+}
+
+.main_wrapper.contents_detail .top .top_right .product_meta .label {
+  font-weight: bold; /* 라벨 강조 */
+  margin-right: 10px; /* 라벨과 값 사이 간격 */
+}
+
+.main_wrapper.contents_detail .top .top_right .product_meta .value {
+  text-align: right; /* 값의 정렬을 오른쪽으로 */
+}
+
+.main_wrapper.contents_detail .top .top_right .product_meta .meta_item:last-child {
+  margin-bottom: 0; /* 마지막 항목에는 여백을 제거 */
+}
+
+
+
+/* 색상/사이즈 선택 레이블 위치 조정 */
+.main_wrapper.contents_detail .top .top_right .buttons.choice span.choice_title {
+  display: inline-block;
+  width: 100px; /* 레이블 너비 고정 */
+  font-weight: bold;
+  margin-right: 10px; /* 드롭다운과의 간격 */
+}
+
+/* 구분선 */
+.main_wrapper.contents_detail .top .top_right .contents_infos {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* 가격 정보 구분선 */
+.main_wrapper.contents_detail .top .top_right .product_meta {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.main_wrapper.contents_detail .top .top_right .contents_infos .row {
+  margin-bottom: 15px;
+}
+
+.main_wrapper.contents_detail .top .top_right .contents_infos .price_original,
+.main_wrapper.contents_detail .top .top_right .contents_infos .sale_percent,
+.main_wrapper.contents_detail .top .top_right .contents_infos .price_final {
+    font-size: 16px; /* 가격 정보 크기 통일 */
+}
+
+.main_wrapper.contents_detail .top .top_right .buttons.choice {
+  margin-top: 15px;
+  font-size: 16px; /* 색상/사이즈 선택 글자 크기 */
+}
+
+
+.main_wrapper.contents_detail .top .top_right .buttons.purchase {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* 기본 버튼 스타일 */
+.main_wrapper.contents_detail .top .top_right .buttons.purchase button {
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-right: 10px; /* 버튼 사이 간격 설정 */
+}
+
+/* 마지막 버튼의 오른쪽 여백 제거 */
+.main_wrapper.contents_detail .top .top_right .buttons.purchase button:last-child {
+  margin-right: 0;
+}
+
+/* 바로 구매하기 버튼을 더 넓게 설정 */
+.main_wrapper.contents_detail .top .top_right .buttons.purchase button:first-child {
+  flex: 2;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+}
+
+/* 장바구니, 찜 버튼 스타일 및 동일한 크기로 설정 */
+.main_wrapper.contents_detail .top .top_right .buttons.purchase button:nth-child(2),
+.main_wrapper.contents_detail .top .top_right .buttons.purchase button:nth-child(3) {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+/* 버튼 hover 효과 */
+.main_wrapper.contents_detail .top .top_right .buttons.purchase button:hover {
+  border-color: #888;
+}
+
+.main_wrapper.contents_detail .top .top_right .total_price_wrapper .total_price_title {
+  margin-right: 5px; /* 제목과 금액 간격 */
+}
+
+.main_wrapper.contents_detail .top .top_right .total_price {
+  font-size: 22px;
+  color: #333; /* 강조 색상 */
+}
+
+
+
+.main_wrapper.contents_detail .top .top_right .total_price_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main_wrapper.contents_detail .center {
+  height: auto;
+}
+.main_wrapper.contents_detail .center .center_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+  padding: 10px 10px;
+}
+.main_wrapper.contents_detail .center .center_title .review_click {
+  font-size: 18px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_detail_wrapper {
+  width: 100%;
+  height: auto;
+  padding: 30px 30px;
+  line-height: 170%;
+  border-top: 2px solid #989898;
+  border-bottom: 1px solid #949494;
+}
+.main_wrapper.contents_detail .center .review_detail_wrapper .review_title_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_detail_wrapper .review_title_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_buttons.write {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.main_wrapper.contents_detail .center .review_photos_wrapper {
+  width: 100%;
+  height: auto;
+  padding: 25px 25px;
+  line-height: 170%;
+  border-bottom: 1px solid #949494;
+}
+.main_wrapper.contents_detail .center .review_photos_wrapper .review_photo_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_photos_wrapper .photos_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_wrapper.contents_detail .center .review_photos_wrapper .photos_wrapper .photos {
+  width: 469px;
+  height: 90px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_wrapper.contents_detail .center .review_photos_wrapper .photos_wrapper .photos .photo {
+  width: 83.8px;
+  height: 100%;
+  border-radius: 15px;
+}
+.main_wrapper.contents_detail .center .review_photos_wrapper .photos_wrapper .photos .photo img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  padding: 20px 20px 20px 30px;
+  line-height: 170%;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .gather_look select {
+  width: 150px;
+  padding: 5px;
+  border-radius: 0px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look_wrapper {
+  height: auto;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 0.5px dashed #6c6c6c;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left {
+  width: 25%;
+  height: 120px;
+  margin-top: 30px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row {
+  height: 100%;
+  width: 100%;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .stars_count {
+  height: 25px;
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .stars_count .stars {
+  font-size: 15px;
+  color: #ffb55e;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .stars_count .review_star_count {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .review_date {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding-left: 10px;
+  line-height: 120%;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .help {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  padding-left: 10px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .help .review_help {
+  font-size: 13px;
+  font-weight: bold;
+  color: blue;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_left .row .help .review_help_last {
+  font-size: 13px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first {
+  width: 60%;
+  height: 120px;
+  margin-top: 30px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row {
+  height: 100%;
+  width: 100%;
+  line-height: 130%;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_detail {
+  height: 50px;
+  font-size: 13px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_good {
+  height: 25px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 93, 169);
+  border: 1px solid rgb(0, 93, 169);
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_good .good {
+  font-size: 11px;
+  font-weight: bold;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_first .row .look_good:hover {
+  background: rgb(0, 122, 222);
+  color: #fff;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_last {
+  width: 12%;
+  height: 120px;
+  margin-top: 30px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_last .row {
+  height: 100%;
+  width: 100%;
+  text-align: right;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_last .row .plus_detail {
+  font-size: 12px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look .look_right_last .row .plus_comments {
+  margin-top: 60px;
+  font-size: 12px;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look:nth-child(1) {
+  border-top: none;
+}
+.main_wrapper.contents_detail .center .review_gather_wrapper .look:nth-child(3) {
+  border-bottom: none;
+}
+.main_wrapper.contents_detail .view_review_more_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.main_wrapper.contents_detail .view_review_more_wrapper .view_rev_more_btn {
+  height: 30px;
+  width: 150px;
+  border: 0.5px solid #7e7e7e;
+  background-color: rgb(169, 216, 255);
+  border-radius: 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main_wrapper.contents_detail .view_review_more_wrapper .view_rev_more_btn:hover {
+  background: rgb(0, 122, 222);
+  color: white;
+}/*# sourceMappingURL=contents_detail.css.map */

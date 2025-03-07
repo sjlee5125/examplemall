@@ -1,0 +1,110 @@
+/* 전체 페이지 스타일 */
+.order_main {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* 탭 스타일 */
+.order_tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.tab_button {
+    flex: 1;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #f8f8f8;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab_button:hover {
+    background-color: #e0e0e0;
+}
+
+/* 주문 상태 필터와 날짜 선택 스타일 */
+.filter_section {
+    padding: 15px;
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.status_filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.status_filter button,
+.date_input {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.info_text {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* 주문 테이블 스타일 */
+.order_table_section {
+    margin-top: 20px;
+    border-top: 2px solid #000;
+}
+
+.order_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.order_table th,
+.order_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.order_table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.product_image {
+    width: 50px;
+    height: auto;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    color: #007bff;
+}

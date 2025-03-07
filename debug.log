@@ -1,0 +1,293 @@
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdaㄴㅁㅇㅁㅇㅁㄴㅇ
+    [star] => 4
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdaㄴㅁㅇㅁㅇㅁㄴㅇ
+    [star] => 4
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => ㅌㅋㅊㅋㅌㅊㅌㅋ
+    [star] => 3
+)
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 12
+    [content_code] => 221119-015
+    [order_id] => 
+    [review_contents] => 1324567890fsadfsdafsafsdㅊㅌㅋㅊㅋa
+    [star] => 4
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 
+    [content_code] => 221119-003
+    [order_id] => 44
+    [review_text] => 123123
+    [rating] => 5
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 
+    [content_code] => 221119-001
+    [order_id] => 44
+    [review_text] => 123123
+    [rating] => 5
+)
+필드 누락 발생
+POST 데이터:
+Array
+(
+    [review_id] => 
+    [content_code] => 221119-003
+    [order_id] => 45
+    [review_text] => 123123
+    [rating] => 5
+)
+POST 데이터:
+Array
+(
+    [review_id] => 
+    [content_code] => 221119-003
+    [order_id] => 45
+    [review_text] => 123123
+    [rating] => 5
+)
+POST 데이터:
+Array
+(
+    [review_id] => 
+    [content_code] => 221119-003
+    [order_id] => 45
+    [review_text] => 123123
+    [rating] => 5
+)

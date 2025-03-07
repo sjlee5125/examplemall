@@ -1,0 +1,78 @@
+.table {
+  width: 1100px;
+  height: auto;
+}
+.table table {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.table table .table_header {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(227, 227, 227);
+}
+.table table tr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  border: 1px solid black;
+}
+.table table tr .content_info {
+  flex-direction: column;
+}
+.table table tr .content_info span {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.table table tr .content_info .content_options {
+  background-color: rgb(214, 214, 214);
+  padding: 5px;
+  border-radius: 10px;
+}
+.table table tr .check {
+  width: 70px;
+}
+.table table tr td {
+  width: 137.5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.table table tr td .img_wrapper {
+  width: 130px;
+  height: 130px;
+  border: 1px solid black;
+}
+.table table tr td .img_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.table table .order_receipt {
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 70px;
+  margin-bottom: 40px;
+}
+.table table .order_receipt .total_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.table table .order_receipt .font_size {
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+.table table .order_receipt .font_weight {
+  font-weight: 700;
+}
+.table table .order_receipt .total_price {
+  font-weight: 700;
+  font-size: 15px;
+}/*# sourceMappingURL=table.css.map */

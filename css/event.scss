@@ -1,0 +1,315 @@
+.event_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 35px;
+    .event_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        font-size: 35px;
+        font-family: var(--jua-font);
+    }
+}
+.event_title_wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+    .join_event {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 318px;
+        height: 65px;
+        background-color: rgb(169, 216, 255);
+        border-radius: 3px;
+        .join_event_title {
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+    .sale_event {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 318px;
+        height: 65px;
+        background-color: rgb(169, 216, 255);
+        border-radius: 3px;
+        .sale_event_title {
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+}
+
+.event_three_wrapper {
+	width: 100%;
+	display: flex;
+	// margin-bottom: 1.5%;
+    line-height: 200%;
+    .donation {
+        .donation_event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            .donation_event_title {
+                font-size: 22px;
+            }
+            .donation_event_title_one {
+                font-size: 22px;
+                font-weight: bold;
+                color: red;
+                .donation_event_title_two {
+                    font-size: 22px;
+                    font-weight: lighter;
+                    color: black;
+                }
+            }
+        }
+        .detail_donation_wrapper {
+            line-height: 150%;
+            .donation_detail_event { 
+                padding-left: 45px;
+                font-weight: bold;
+            }
+            .donation_detail_event_one {
+                width: 100%;
+                display: flex;
+                padding-left: 55px;
+                color: red;
+                .donation_detail_event_two {
+                    display: flex;
+                    color: #000000;
+                    .donation_detail_event_three {
+                        color: rgb(43, 78, 255);
+                    }
+                }
+            }
+        }
+    }
+    .blood {
+        .blood_event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            .blood_event_title {
+                font-size: 22px;
+            }
+            .blood_event_title_one {
+                font-size: 22px;
+                font-weight: bold;
+                color: red;
+                .blood_event_title_two {
+                    font-size: 22px;
+                    font-weight: lighter;
+                    color: black;
+                }
+            }
+        }
+        .detail_blood_wrapper {
+            line-height: 150%;
+            .blood_detail_event { 
+                padding-left: 75px;
+                font-weight: bold;
+            }
+            .blood_detail_event_one {
+                width: 100%;
+                display: flex;
+                padding-left: 55px;
+                color: red;
+                .blood_detail_event_two {
+                    display: flex;
+                    color: #000000;
+                    .blood_detail_event_three {
+                        color: rgb(43, 78, 255);
+                    }
+                }
+            }
+        }
+    }
+    .service {
+        .service_event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            .service_event_title {
+                font-size: 22px;
+            }
+            .service_event_title_one {
+                font-size: 22px;
+            }
+            .service_event_title_two {
+                font-size: 22px;
+                font-weight: bold;
+                color: red;
+                .service_event_title_three {
+                    font-size: 22px;
+                    font-weight: lighter;
+                    color: black;
+                }
+            }
+        }
+        .detail_service_wrapper {
+            line-height: 150%;
+            .service_detail_event { 
+                padding-left: 25px;
+                font-weight: bold;
+            }
+            .service_detail_event_one {
+                width: 100%;
+                display: flex;
+                padding-left: 55px;
+                color: red;
+                .service_detail_event_two {
+                    display: flex;
+                    color: #000000;
+                    .service_detail_event_three {
+                        color: rgb(43, 78, 255);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.event_free_sale_wrapper {
+    width: 100%;
+	display: flex;
+    line-height: 200%;
+    .free {
+        .free_event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            .free_event_title {
+                font-size: 22px;
+            }
+            .free_event_title_one {
+                font-size: 22px;
+                font-weight: bold;
+                color: red;
+            }
+        }
+        .detail_free_wrapper {
+            line-height: 150%;
+            .free_detail_event {
+                padding-left: 90px;
+                font-weight: bold;
+            }
+            .free_detail_event_date {
+                width: 100%;
+                display: flex;
+                padding-left: 105px;
+                color: red;
+            }
+        }
+    }
+    .sale {
+        .sale_event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            .sale_event_title_one {
+                font-size: 22px;
+                font-weight: bold;
+                color: red;
+            }
+            .sale_event_title {
+                font-size: 22px;
+                color: black;
+            }
+        }
+        .detail_sale_wrapper {
+            line-height: 150%;
+            .sale_detail_event {
+                padding-left: 75px;
+                font-weight: bold;
+            }
+            .sale_detail_event_date {
+                width: 100%;
+                display: flex;
+                padding-left: 105px;
+                color: red;
+            }
+        }
+    }
+    .delivery_charge {
+        .delivery_event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            .delivery_event_title {
+                font-size: 22px;
+            }
+            .delivery_event_title_two {
+                font-size: 22px;
+                font-weight: bold;
+                color: red;
+                .delivery_event_title_three {
+                    font-size: 22px;
+                    font-weight: lighter;
+                    color: black;
+                }
+            }
+        }
+        .detail_delivery_wrapper {
+            line-height: 150%;
+            .delivery_detail_event {
+                padding-left: 90px;
+                font-weight: bold;
+            }
+            .delivery_detail_event_date {
+                width: 100%;
+                display: flex;
+                padding-left: 105px;
+                color: red;
+            }
+        }
+    }
+}

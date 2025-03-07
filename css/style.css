@@ -1,0 +1,502 @@
+@import url(contents_detail.css);
+@import url(cart.css);
+@import url(pay.css);
+@import url(event.css);
+@import url(review.css);
+@import url(manager.css);
+@import url(inc/view_more_menu.css);
+@import url(inc/search.css);
+@import url(inc/table.css);
+@import url(login.css);
+
+/* 공통 폰트 설정 */
+body, :root {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  background: #fff;
+}
+
+/* 전체 영역 스타일링 */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .adv_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(175, 255, 255);
+}
+
+a:link, a:visited {
+  color: black; /* 링크 색상을 검정으로 설정 (원하는 색상으로 수정 가능) */
+  text-decoration: none; /* 밑줄 제거 (선택사항) */
+}
+
+a:hover, a:active {
+  color: black; /* 마우스 호버 시에도 동일한 색상 유지 */
+  text-decoration: underline; /* 호버 시 밑줄 표시 (선택사항) */
+}
+
+
+/* 메인 콘텐츠 레이아웃 설정 */
+.main_wrapper {
+  width: 100%;
+  max-width: 1200px; /* 최대 너비 제한 */
+  height: auto;
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 0 20px; /* 좌우 여백 추가 */
+  
+}
+
+
+.main_wrapper .view_more_wrapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_wrapper .view_more_wrapper .view_more_btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(86, 88, 153);
+}
+
+/* NEW 섹션 그리드 설정 */
+.new_main_contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 가로 3열 */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* NEW 섹션 아래쪽 margin 추가 */
+.new_main_wrapper {
+  margin-bottom: 10px; /* 아래쪽 여백 60px 추가 */
+}
+
+
+/* NEW 섹션 박스 스타일 (CATEGORY 스타일과 일치) */
+.new_main_content {
+  border: 1px solid #ddd; /* 테두리 스타일 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  background-color: #fff; /* 배경색 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px; /* CATEGORY와 동일한 패딩 */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.new_main_content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.new_main_header {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* 이미지 컨테이너 스타일 */
+.content_img_wrapper {
+  width: 100%;
+  height: 320px; /* 높이 고정 */
+  overflow: hidden; /* 넘치는 부분 숨김 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* 여백이 생길 경우 배경색 설정 */
+}
+
+/* 이미지 스타일 */
+.content_img_wrapper img {
+  width: 100%; /* 이미지 너비 100% */
+  height: 100%; /* 이미지 높이 100% */
+  object-fit: cover; /* 비율 유지하며 상자에 꽉 채움 */
+}
+
+
+/* 텍스트 스타일 */
+.content_text_wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content_name_wrapper {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.content_price_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.discount_rate {
+  color: red;
+  font-weight: bold;
+}
+
+/* 기존 스타일 */
+.util_nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.util_nav li {
+  margin: 10px 20px 10px 0;
+}
+
+.util_nav li span {
+  font-size: 12px;
+}
+
+.main_nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* 로고 스타일 */
+.logo_wrapper {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 1px 1px pink;
+  border-radius: 20px;
+}
+
+.logo_wrapper .logo {
+  color: darkblue;
+  font-size: 28px;
+  font-family: var(--black-han-font);
+}
+
+/* 기타 아이콘 스타일 */
+.like_nav {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.like_nav .like_nav_title {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+.cart_nav {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.cart_nav .cart_nav_title {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+.my_page_nav {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.my_page_nav .my_page_nav_title {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+/* 메인 메뉴 스타일 */
+.main_menu_wrapper {
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+  display: flex;
+}
+
+.main_menu_wrapper .main_menu_detail {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_menu_wrapper .main_menu_detail i {
+  color: rgb(66, 66, 66);
+}
+
+.main_menu_bar {
+  width: 1250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.main_menu_bar li {
+  margin-right: 28px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main_menu_bar .main_menu01 a {
+  color: red;
+}
+
+.main_menu_bar .main_menu02 a {
+  color: blueviolet;
+}
+
+.main_menu_bar .main_menu03 a {
+  color: coral;
+}
+
+.banner_main {
+  width: 100%; /* 전체 화면 너비 */
+  max-width: 100%; /* 최대 너비를 제한하지 않음 */
+  overflow: hidden; /* 넘치는 부분을 숨김 */
+  position: relative; /* 슬라이더 영역을 상대적으로 배치 */
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center;
+  padding: 0; /* 여백 제거 */
+  margin: 0px 0 10px; /* 가운데 정렬 */
+  height: 500px; /* 슬라이더 높이 */
+  
+}
+
+.slider {
+  display: flex; /* 슬라이드를 가로로 나열 */
+  transition: transform 0.5s ease-in-out; /* 부드러운 슬라이딩 */
+  width: 100%; /* 전체 너비 */
+  height: 100%; /* 부모 높이 채우기 */
+}
+
+.slide {
+  flex: 0 0 100%; /* 슬라이드 하나당 100% 너비 */
+  display: flex;
+  justify-content: center; /* 내용 중앙 정렬 */
+  align-items: center;
+}
+
+.slide img {
+  width: 100%; /* 이미지가 슬라이더 너비를 채우도록 설정 */
+  height: 100%; /* 슬라이더 높이를 채우도록 설정 */
+  object-fit: cover; /* 비율을 유지하면서 이미지가 잘리지 않도록 조정 */
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* 추천 콘텐츠 영역 */
+.recommend_main_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* 왼쪽 정렬로 변경 */
+  position: relative;
+  /* 절대 위치로 놓을 버튼을 위한 상대 위치 기준 */
+  max-width: 1100px;
+  margin: 40px auto; /* 위아래 40px 여백, 좌우 중앙 정렬 */
+  
+}
+
+/* BEST 제목 스타일 */
+.recommend_main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 버튼과 제목 사이에 간격 */
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.recommend_main_header .recommend_main_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 정렬 네비게이션 스타일 */
+.sort_nav_wrapper {
+  display: flex;
+  gap: 10px;
+  padding: 8px 15px;
+}
+
+/* 비활성화된 버튼 스타일 */
+.sort_nav_wrapper div {
+  font-size: 14px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  color: #ccc;
+  cursor: pointer;
+  background-color: transparent !important;
+  /* 강제로 배경색 제거 */
+  font-weight: normal;
+}
+
+/* 활성화된 버튼 스타일 */
+.sort_nav_wrapper .active {
+  color: #000;
+  /* 진한 색상으로 표시 */
+  border-color: #000;
+  /* 진한 테두리 */
+  font-weight: bold;
+  background-color: transparent !important;
+  /* 강제로 배경색 제거 */
+}
+
+/* 추천 콘텐츠 항목 스타일 */
+.recommend_main_content_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.recommend_main_contents {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recommend_main_content {
+  width: 100%;
+  max-width: 220px;
+  height: 400px;
+  /* 고정 높이 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* 세로로 요소 간 간격 조정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  /* 카드 배경색 추가 */
+}
+
+.recommend_main_content .content_img_wrapper {
+  width: 100%;
+  height: 300px;
+  /* 높이를 300px로 늘려 카드의 대부분을 이미지가 차지하도록 설정 */
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommend_main_content .content_img_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 이미지가 영역을 가득 채우도록 유지 */
+}
+
+.recommend_main_content .content_text_wrapper {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-grow: 1;
+  /* 남은 공간을 차지하도록 설정 */
+}
+
+.recommend_main_content .content_name_wrapper {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(161, 161, 161);
+}
+
+.recommend_main_content .content_price_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.recommend_main_content .discount_rate {
+  color: rgb(210, 96, 119);
+  font-size: 18px;
+}
+
+.recommend_main_content .content_price {
+  font-size: 14px;
+  color: #333;
+}

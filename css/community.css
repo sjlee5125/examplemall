@@ -1,0 +1,453 @@
+/* 공지사항 섹션 전체 스타일 */
+.notice-section {
+    background-color: #f9f9f9; /* 섹션 배경 */
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 공지사항 컨테이너 */
+.notice-section .container {
+    max-width: 1200px; /* 최대 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+}
+
+/* 공지사항 제목 스타일 */
+.notice-section .notice-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 공지사항 부제목 스타일 */
+.notice-section .notice-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 공지사항 탭 메뉴 */
+.notice-tabs {
+    margin: 20px 0; /* 공지사항과 간격 */
+    text-align: center;
+}
+
+.notice-tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.notice-tabs ul li {
+    display: inline-block;
+}
+
+.notice-tabs ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* 기본 상태에서는 밑줄 없음 */
+}
+
+.notice-tabs ul li a:hover {
+    color: #007acc;
+    border-bottom: 2px solid #007acc; /* 호버 시 밑줄 추가 */
+}
+
+.notice-tabs ul li a.active {
+    color: #007acc;
+    border-bottom: 2px solid #007acc; /* 활성화된 상태 밑줄 표시 */
+}
+
+/* 공지사항 리스트 */
+.notice-section .notice-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #eaeaea;
+}
+
+/* 공지사항 아이템 스타일 */
+.notice-section .notice-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* 공지 카테고리 */
+.notice-section .notice-category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* 공지사항 링크 */
+.notice-section .notice-link {
+    flex: 1;
+    font-size: 16px;
+    color: #000; /* 기본 글씨 색상: 검정색 */
+    text-decoration: none;
+}
+
+.notice-section .notice-link:hover {
+    color: #000; /* 호버 시 글씨 색상: 파란색 */
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+/* 공지사항 날짜와 조회수 */
+.notice-section .notice-date,
+.notice-section .notice-views {
+    font-size: 12px;
+    color: #999;
+    margin-left: 20px;
+}
+
+/* 리뷰 섹션 전체 스타일 */
+.review-section {
+    background-color: #f9f9f9; /* 섹션 배경 */
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 리뷰 컨테이너 */
+.review-section .container {
+    max-width: 1200px; /* 최대 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+}
+
+/* 리뷰 제목 스타일 */
+.review-section .review-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 리뷰 부제목 스타일 */
+.review-section .review-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 리뷰 리스트 */
+.review-section .review-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #eaeaea;
+}
+
+/* 리뷰 아이템 */
+.review-list .review-item {
+    display: flex; /* 플렉스 박스 */
+    align-items: center; /* 세로 정렬 */
+    gap: 20px; /* 이미지와 텍스트 간 간격을 넓힘 */
+    padding: 15px 0;
+    border-bottom: 1px solid #eaeaea; /* 아이템 간 구분선 */
+}
+
+/* 링크 스타일 */
+.review-list .review-link {
+    display: flex; /* 전체를 감싸는 플렉스 */
+    align-items: center; /* 세로 정렬 유지 */
+    width: 100%; /* 링크를 전체 너비로 확장 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 텍스트 색상 상속 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 부드러운 효과 */
+}
+
+.review-list .review-link:hover {
+    background-color: #f9f9f9; /* 링크에 호버 시 배경색 */
+    color: #007acc; /* 호버 시 텍스트 색상 */
+}
+
+/* 리뷰 작성자 사진 */
+.review-item .review-user-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* 둥근 모양 */
+    overflow: hidden;
+    flex-shrink: 0; /* 크기 고정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* 기본 배경 */
+}
+
+.review-item .review-user-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+/* 리뷰 텍스트 영역 */
+.review-item .review-content {
+    flex: 1; /* 텍스트 영역 확장 */
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    justify-content: center; /* 텍스트 수직 정렬 */
+    margin-left: 15px; /* 사진과 텍스트 간격 추가 */
+}
+
+/* 작성자 이름 */
+.review-writer {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* 리뷰 텍스트 */
+.review-item .review-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 별점과 작성시간 */
+.review-side-info {
+    text-align: right; /* 오른쪽 정렬 */
+    flex-shrink: 0; /* 크기 고정 */
+    min-width: 80px; /* 최소 너비 설정 */
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: flex-end; /* 오른쪽 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+}
+
+.review-side-info .review-star {
+    font-size: 16px;
+    color: #ffbb33; /* 별 색상 */
+    margin-bottom: 5px; /* 별점과 날짜 사이 간격 */
+}
+
+.review-side-info .review-date {
+    font-size: 12px;
+    color: #999;
+}
+
+/* 리뷰 상세 섹션 전체 */
+.review-detail-section {
+    background-color: #f9f9f9; /* 섹션 배경 */
+    padding: 50px 20px;
+    width: 100%; /* 전체 너비 */
+    box-sizing: border-box;
+}
+
+.review-detail-container {
+    max-width: 1200px; /* 최대 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: #fff; /* 흰색 배경 */
+    padding: 30px;
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+
+/* 상품 헤더 */
+.product-header {
+    display: flex; /* 플렉스 박스 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    gap: 20px; /* 이미지와 이름 간격 */
+    margin-bottom: 30px;
+}
+
+.product-image img {
+    width: 60px; /* 고정된 너비 */
+    height: 60px; /* 고정된 높이 */
+    object-fit: cover; /* 비율 유지하며 고정 크기에 맞춤 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+
+.product-name h1 {
+    font-size: 20px; /* 글씨 크기 */
+    font-weight: bold;
+    margin: 0;
+    color: #333; /* 글씨 색상 */
+}
+
+
+/* 리뷰 헤더 */
+.review-header {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin-bottom: 20px;
+}
+
+.review-title {
+    font-size: 24px; /* 제목 크기 */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review-meta {
+    font-size: 14px; /* 작성자와 평점 텍스트 크기 */
+    color: #666;
+}
+
+.review-meta .review-star {
+    color: #ffbb33; /* 별 색상 */
+    font-weight: bold;
+}
+
+/* 리뷰 본문 */
+.review-body {
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    margin-top: 20px;
+}
+
+.review-image {
+    text-align: center; /* 이미지 중앙 정렬 */
+    margin-bottom: 20px;
+}
+
+.review-image img {
+    width: 400px; /* 고정된 너비 */
+    height: 400px; /* 고정된 높이 */
+    object-fit: cover; /* 이미지 비율 유지하며 고정 크기에 맞춤 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+
+/* 리뷰 내용 */
+.review-content {
+    font-size: 16px; /* 본문 텍스트 크기 */
+    line-height: 1.6; /* 줄 간격 */
+    color: #333; /* 본문 텍스트 색상 */
+    white-space: pre-wrap; /* 줄바꿈 유지 */
+    margin-top: 20px;
+}
+
+/* 리뷰가 없는 경우 메시지 */
+.no-review-message {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* FAQ 섹션 전체 스타일 */
+.faq-section {
+    background-color: #f9f9f9; /* 섹션 배경 */
+    padding: 50px 20px; /* 상하 50px, 좌우 20px 패딩 */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* FAQ 컨테이너 */
+.faq-section .container {
+    max-width: 1200px; /* 최대 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+    background-color: #fff;
+    padding: 30px; /* 내부 여백 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+}
+
+/* FAQ 제목 스타일 */
+.faq-section .faq-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* FAQ 부제목 스타일 */
+.faq-section .faq-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* FAQ 탭 메뉴 */
+.faq-tabs {
+    margin: 20px 0; /* FAQ와 간격 */
+    text-align: center;
+}
+
+.faq-tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.faq-tabs ul li {
+    display: inline-block;
+}
+
+.faq-tabs ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* 기본 상태에서는 밑줄 없음 */
+}
+
+.faq-tabs ul li a:hover {
+    color: #007acc;
+    border-bottom: 2px solid #007acc; /* 호버 시 밑줄 추가 */
+}
+
+.faq-tabs ul li a.active {
+    color: #007acc;
+    border-bottom: 2px solid #007acc; /* 활성화된 상태 밑줄 표시 */
+}
+
+/* FAQ 리스트 */
+.faq-section .faq-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #eaeaea; /* 리스트 상단에 경계선 */
+}
+
+/* FAQ 아이템 스타일 */
+.faq-section .faq-item {
+    padding: 15px 0; /* 항목 간격 */
+    border-bottom: 1px solid #eaeaea; /* 항목 구분선 */
+}
+
+/* FAQ 링크 */
+.faq-section .faq-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* 기본 글씨 색상: 검정색 */
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.faq-section .faq-link:hover {
+    color: #007acc; /* 호버 시 글씨 색상: 파란색 */
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}

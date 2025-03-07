@@ -1,0 +1,14 @@
+INSERT INTO `contents`(`content_code`, `content_img`, `deliv_today`, `content_name`, `discount_rate`, `content_cost`, `content_price`, `category`) 
+VALUES ('221119-012','img/contents/top1.jpg','N','진짜 너무 예쁜','20','30000','35000', 'BEST');
+
+INSERT INTO `contents`(`content_code`, `content_img`, `deliv_today`, `content_name`, `discount_rate`, `content_cost`, `content_price`, `category`) 
+VALUES ('221119-013','img/contents/top2.jpg','N','진짜 너무 예쁜','20','30000','35000', 'BEST');
+
+INSERT INTO `contents`(`content_code`, `content_img`, `deliv_today`, `content_name`, `discount_rate`, `content_cost`, `content_price`, `category`) 
+VALUES ('221119-0114','img/contents/top3.jpg','N','진짜 너무 예쁜','20','30000','35000', 'BEST');
+
+INSERT INTO `contents`(`content_code`, `content_img`, `deliv_today`, `content_name`, `discount_rate`, `content_cost`, `content_price`, `category`) 
+VALUES ('221119-015','img/contents/top4.jpg','N','진짜 너무 예쁜','20','30000','35000', 'BEST');
+
+INSERT INTO `contents`(`content_code`, `content_img`, `deliv_today`, `content_name`, `discount_rate`, `content_cost`, `content_price`, `category`) 
+VALUES ('221119-016','img/contents/top5.jpg','N','진짜 너무 예쁜','20','30000','35000', 'BEST');

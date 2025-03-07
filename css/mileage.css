@@ -1,0 +1,160 @@
+/* 전체 배경 및 레이아웃 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 헤더 */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#header_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.category_menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.category_menu a:hover {
+    font-weight: bold;
+}
+
+.search_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.search_wrapper input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search_button {
+    padding: 5px 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search_button:hover {
+    background-color: #222;
+}
+
+/* 적립금 제목 */
+.mileage-summary h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Noto Sans', 'Arial', sans-serif; /* 폰트 설정 */
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 적립금 요약 테이블 */
+.mileage-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Noto Sans', 'Arial', sans-serif; /* 폰트 설정 */
+    font-weight: bold; /* 굵게 */
+}
+
+.mileage-table td {
+    padding: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+
+
+/* 조회 버튼 */
+.query-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Noto Sans', 'Arial', sans-serif; /* 폰트 설정 */
+    font-weight: bold; /* 굵게 */
+}
+
+.query-button:hover {
+    background-color: #222;
+}
+
+/* 적립금 내역 */
+.mileage-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Noto Sans', 'Arial', sans-serif; /* 폰트 설정 */
+    font-weight: bold; /* 굵게 */
+}
+
+.mileage-history th,
+.mileage-history td {
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mileage-history th {
+    background: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.mileage-history tr:last-child td {
+    border-bottom: none;
+}
+
+/* 적립금 내역이 없을 때 중앙 정렬 */
+.mileage-history td[colspan] {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    color: #888;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .mileage-table td,
+    .mileage-history th,
+    .mileage-history td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .query-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

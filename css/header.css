@@ -1,0 +1,125 @@
+#header {
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 11px;
+    margin: 0 0;
+}
+
+#header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#header .inner {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#header .inner .top_nav{
+    margin: 20px 0 5px;
+}
+
+#header .inner .bottom_cate_box {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+#header .inner .user_menu {
+    float: right;
+    text-align: right;
+}
+
+.all_width {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    position: relative;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+/* 상단 네비게이션 */
+.top_nav {
+    display: flex;
+    justify-content: space-between; /* 좌우 정렬 */
+    align-items: center;           /* 세로 가운데 정렬 */
+    width: 100%;                   /* 전체 폭 차지 */
+    box-sizing: border-box;        /* 여백 포함 폭 계산 */
+}
+
+/* 상단 카테고리 박스 */
+.bottom_cate_box {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+/* 하단 네비게이션 */
+.bottom_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    /* 기존 배경색 유지 */
+}
+
+/* 카테고리 및 유저 메뉴 스타일 */
+.category_menu a,
+.user_menu a {
+    text-decoration: none;
+    color: #333;
+    /* 텍스트 색상 */
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.category_menu a:last-child,
+.user_menu a:last-child {
+    margin-right: 0;
+}
+
+/* 아이콘 섹션 */
+.icon_section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* 이미지 비율을 유지하면서 잘리지 않도록 함 */
+}
+
+/* 오른쪽 상단 섹션 */
+.right_top_section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.real_time_keyword {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* 아이콘 섹션 */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart_nav,
+.profile_nav {
+    font-size: 20px;
+    color: #000;
+}

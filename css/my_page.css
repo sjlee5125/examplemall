@@ -1,0 +1,109 @@
+/* 공통 레이아웃 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Jua', sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mypage_main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 포인트 정보 섹션 */
+.point_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.point_item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    position: relative;
+}
+
+.point_item button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #0073e6;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 주문 처리 현황 섹션 */
+.order_status {
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.status_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.status_grid div {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.status_grid div span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    color: #0073e6;
+}
+
+/* 마이페이지 메뉴 섹션 */
+.mypage_menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu_item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.menu_item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+}
+
+.menu_item a:hover {
+    color: #0073e6;
+}

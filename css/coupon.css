@@ -1,0 +1,134 @@
+/* 전체 레이아웃 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 헤더 */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#header_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.category_menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.category_menu a:hover {
+    font-weight: bold;
+}
+
+.search_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.search_wrapper input {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search_button {
+    padding: 5px 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search_button:hover {
+    background-color: #222;
+}
+
+/* 제목 */
+.coupon-summary h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin: 50px 0; /* 제목과 테이블 사이 간격 증가 */
+}
+
+/* 쿠폰 테이블 */
+.coupon-table {
+    width: 95%; /* 테이블 너비 확장 */
+    max-width: 1200px; /* 최대 너비 */
+    margin: 0 auto 60px; /* 테이블 아래 간격 추가 */
+    border-collapse: collapse;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-table th,
+.coupon-table td {
+    padding: 20px 30px; /* 셀 공간 증가 */
+    font-size: 18px; /* 셀 글씨 크기 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+.coupon-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.coupon-table td {
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+.coupon-table .empty-message {
+    font-size: 18px; /* "내역 없음" 글씨 크기 증가 */
+    font-weight: bold;
+    color: #888;
+}
+
+/* 페이지네이션 */
+.pagination-wrapper {
+    text-align: center;
+    margin-top: 50px; /* 페이지네이션 상단 간격 증가 */
+    font-size: 20px; /* 페이지 번호 글씨 크기 */
+}
+
+.pagination-wrapper a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 8px; /* 페이지 번호 간격 */
+}
+
+.pagination-wrapper a:hover {
+    color: #555;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .coupon-table th,
+    .coupon-table td {
+        font-size: 16px; /* 모바일에서 글씨 크기 조정 */
+        padding: 15px;
+    }
+
+    .pagination-wrapper {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,73 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* 좌우 여백 추가 */
+  box-sizing: border-box;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 300px;
+  margin: 0 20px;
+  padding: 0 20px; /* 내용 양옆 여백 */
+  border-right: 1px solid #e0e0e0; /* 섹션 사이에 세로 줄 추가 */
+}
+
+.footer-column:last-child {
+  border-right: none; /* 마지막 섹션에는 세로 줄 제거 */
+}
+
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.footer-column button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-column button:hover {
+  background-color: #555;
+}
+
+.footer-column a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column {
+      margin-bottom: 30px;
+  }
+}
