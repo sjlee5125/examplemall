@@ -2,13 +2,12 @@
 require_once("inc/session.php");
 require_once("inc/db.php");
 
-// 로그인 확인
 if (!isset($_SESSION['member_id'])) {
     echo "<script>alert('로그인이 필요합니다.'); location.href = 'login.php';</script>";
     exit;
 }
 
-// POST 데이터 가져오기
+// POST
 $cart_items = isset($_POST['cart_items']) ? json_decode($_POST['cart_items'], true) : null;
 $total_price = $_POST['total_price'] ?? null;
 $recipient_name = $_POST['recipient_name'] ?? null;
